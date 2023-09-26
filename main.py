@@ -35,7 +35,7 @@ def flip_card():
     canvas.itemconfig(card_word, text=current_card["TURKISH"], fill="white")
     
 
-# ---------------------- SAVING THE WORDS USER HAVE KNOWN ------------------------- #
+# -------------------- SAVING THE WORDS USER HAVE KNOWN ----------------------- #
 
 def is_known():
     dict.remove(current_card)
@@ -47,7 +47,7 @@ def is_known():
 # words_to_learn = {word for word in dict if word not in is_known}
 
 
-# ---------------------------- UI SETUP ------------------------------- #
+# ------------------------------- UI SETUP ---------------------------------- #
 window = Tk()
 window.title("Flashcards")
 window.config(padx=50, pady=50, bg=BACKGROUND_COLOR)
