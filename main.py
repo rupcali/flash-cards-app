@@ -39,12 +39,10 @@ def flip_card():
 
 def is_known():
     dict.remove(current_card)
-    print(len(dict))
     next_card()
     data = pandas.DataFrame(dict)
     data.to_csv("data/words_to_learn.csv", index=False)
 
-# words_to_learn = {word for word in dict if word not in is_known}
 
 
 # ------------------------------- UI SETUP ---------------------------------- #
